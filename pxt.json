@@ -4,8 +4,7 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*",
-        "SSD1306_OLED": "github:pisupply/pxt-oled-ssd1306#v1.2.3"
+        "microphone": "*"
     },
     "files": [
         "main.blocks",
