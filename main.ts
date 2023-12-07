@@ -12,14 +12,14 @@ radio.onReceivedString(function (msg) {
 let buttonClickCount = 0;
 let lastButtonClick = 0;
 input.onButtonPressed(Button.A, () => {
-    if (input.runningTime() - lastButtonClick > 1000) {
+    if (input.runningTime() - lastButtonClick > 2000) {
         lastButtonClick = 0;
     }
     buttonClickCount++;
     lastButtonClick = input.runningTime();
 });
 function getButtonClickCount(): number | void {
-    if (input.runningTime() - lastButtonClick > 1000) {
+    if (input.runningTime() - lastButtonClick > 2000) {
         let temp = buttonClickCount;
         buttonClickCount = 0;
         return temp;
